@@ -1,0 +1,12 @@
+std = "roblox"
+
+[lints]
+# Turn off noisy or unhelpful warnings
+shadowing = "allow"
+unused_variable = "allow"
+multiple_statements = "allow"
+incorrect_standard_library_use = "allow"
+
+[config]
+# Luau specifics
+roblox = true
