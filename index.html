@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divorced Dad: Ascension</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app" class="era-rock-bottom">
+    <header class="topbar panel">
+      <div>
+        <h1>Divorced Dad: Ascension</h1>
+        <p id="eraLabel">Era: Rock Bottom</p>
+      </div>
+      <div class="top-currencies" id="topCurrencies"></div>
+      <div class="top-actions">
+        <span id="saveStatus">Saved just now</span>
+        <button id="manualSaveBtn">Save</button>
+        <button id="exportSaveBtn">Export</button>
+        <button id="importSaveBtn">Import</button>
+        <button id="resetSaveBtn" class="danger">Reset</button>
+        <button id="muteBtn">🔊</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="left panel">
+        <h2>Main Hustle</h2>
+        <div id="mainClicker" class="clicker" tabindex="0" role="button" aria-label="Generate Life Momentum">
+          <span>Tap Resolve</span>
+        </div>
+        <div id="clickValue" class="subtle">+0 Life Momentum per click</div>
+        <div id="floatingContainer"></div>
+        <div class="panel small">
+          <h3>Timeline Traits</h3>
+          <div id="traitList"></div>
+        </div>
+        <div class="panel small">
+          <h3>Active Buffs</h3>
+          <div id="buffList"></div>
+        </div>
+      </section>
+
+      <section class="center panel">
+        <h2>Operations</h2>
+        <div id="generatorList" class="scroll"></div>
+      </section>
+
+      <section class="right panel">
+        <div class="tabs">
+          <button class="tab active" data-tab="upgrades">Upgrades</button>
+          <button class="tab" data-tab="achievements">Achievements</button>
+          <button class="tab" data-tab="events">Events</button>
+          <button class="tab" data-tab="stats">Stats</button>
+          <button class="tab" data-tab="codex">Codex</button>
+          <button class="tab" data-tab="timeline">New Timeline</button>
+        </div>
+        <div id="tab-upgrades" class="tab-content active"></div>
+        <div id="tab-achievements" class="tab-content"></div>
+        <div id="tab-events" class="tab-content"></div>
+        <div id="tab-stats" class="tab-content"></div>
+        <div id="tab-codex" class="tab-content"></div>
+        <div id="tab-timeline" class="tab-content"></div>
+      </section>
+    </main>
+
+    <footer class="bottombar panel">
+      <div id="hintText">A fresh timeline starts with one click and a lot of questionable coffee.</div>
+      <div id="automationStatus"></div>
+    </footer>
+  </div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-card panel">
+      <h3 id="modalTitle">Notice</h3>
+      <div id="modalBody"></div>
+      <div id="modalActions"></div>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
