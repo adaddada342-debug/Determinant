@@ -1,0 +1,99 @@
+:root {
+  --bg: #20170f;
+  --panel: #3a281b;
+  --panel-2: #4a3423;
+  --text: #f5e8d0;
+  --accent: #f6b352;
+  --good: #8dd694;
+  --bad: #ff8f7a;
+  --muted: #c7b79a;
+  --shadow: rgba(0,0,0,0.35);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Verdana", sans-serif;
+  background: radial-gradient(circle at top, #4b3422, var(--bg));
+  color: var(--text);
+  min-height: 100vh;
+}
+.panel {
+  background: linear-gradient(180deg, var(--panel-2), var(--panel));
+  border: 2px solid #6d513a;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 0 #9c7a5b, 0 6px 12px var(--shadow);
+  padding: 10px;
+}
+.topbar { display: grid; grid-template-columns: 1fr 1fr auto; gap: 10px; margin: 10px; }
+.topbar h1 { margin: 0; font-size: 1.5rem; }
+.topbar p { margin: 4px 0 0; color: var(--muted); }
+.top-currencies { display: grid; grid-template-columns: repeat(3,minmax(120px,1fr)); gap: 6px; align-content: center; }
+.currency-chip { background: rgba(0,0,0,0.18); border: 1px solid #715540; border-radius: 6px; padding: 6px; font-size: .85rem; }
+.currency-chip b { display:block; color: var(--accent); }
+.top-actions { display:flex; gap:6px; align-items: start; flex-wrap: wrap; }
+button {
+  background: linear-gradient(180deg, #866245, #684830);
+  color: var(--text);
+  border: 1px solid #a57a56;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover { filter: brightness(1.08); }
+button:active { transform: translateY(1px); }
+button.danger { background: linear-gradient(180deg, #8b4035, #602a23); }
+.layout { display:grid; grid-template-columns: 1.1fr 1.3fr 1.3fr; gap: 10px; margin: 0 10px; height: calc(100vh - 180px); }
+.left,.center,.right { overflow: hidden; display:flex; flex-direction:column; }
+.scroll { overflow: auto; padding-right: 5px; }
+.clicker {
+  height: 220px;
+  border-radius: 50%;
+  border: 3px solid #d8a56d;
+  background: radial-gradient(circle at 30% 30%, #ffd9a8, #cf8b4e 45%, #8a552d 80%);
+  box-shadow: inset 0 12px 25px rgba(255,255,255,0.15), inset 0 -14px 30px rgba(0,0,0,0.3), 0 10px 20px rgba(0,0,0,0.35);
+  display:flex; align-items:center; justify-content:center;
+  font-size:1.4rem; text-align:center; margin:8px 0; user-select:none;
+  transition: transform .08s ease;
+}
+.clicker.pop { transform: scale(0.96); }
+.subtle { color: var(--muted); font-size: .9rem; }
+.small { margin-top: 10px; }
+#floatingContainer { position: relative; min-height: 40px; }
+.float {
+  position: absolute; left: 45%;
+  animation: float 1s ease forwards;
+  font-weight: bold;
+}
+@keyframes float { from {opacity:1; transform: translateY(0);} to {opacity:0; transform: translateY(-30px);} }
+.generator, .upgrade, .achievement, .event-card {
+  border: 1px solid #7f6249;
+  border-radius: 8px;
+  background: rgba(0,0,0,0.15);
+  padding: 8px;
+  margin-bottom: 8px;
+}
+.generator-header, .row-between { display:flex; justify-content:space-between; gap:8px; }
+.generator small, .upgrade small, .achievement small { color: var(--muted); display:block; }
+.rate { color: var(--good); }
+.locked { opacity:.45; filter: grayscale(.5); }
+.tabs { display:flex; flex-wrap: wrap; gap:4px; margin-bottom:8px; }
+.tab.active { outline: 2px solid var(--accent); }
+.tab-content { display:none; overflow:auto; }
+.tab-content.active { display:block; }
+.grid { display:grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap:8px; }
+.bottombar { margin: 10px; display:flex; justify-content:space-between; font-size:.9rem; color: var(--muted); }
+.modal {
+  position: fixed; inset:0; display:flex; align-items:center; justify-content:center;
+  background: rgba(0,0,0,0.55);
+}
+.hidden { display:none !important; }
+.modal-card { width:min(600px,92vw); max-height:80vh; overflow:auto; }
+.choice-btn { display:block; width:100%; margin-top:6px; text-align:left; }
+.reward { color:var(--good); }
+.era-self-repair { --bg:#1f1b13; --panel:#31402b; --panel-2:#4c5f42; --accent:#9fd77f; }
+.era-rebuild { --bg:#1a1820; --panel:#2f2b44; --panel-2:#433f60; --accent:#84b7ff; }
+.era-success { --bg:#111c23; --panel:#1e3f4f; --panel-2:#2f5e72; --accent:#85f0df; }
+.era-influence { --bg:#1d1330; --panel:#3e2461; --panel-2:#573181; --accent:#e2a9ff; }
+.era-absurd-wealth { --bg:#2a1d08; --panel:#6b4f17; --panel-2:#8d6a22; --accent:#ffd36b; }
+.era-reality-manipulation { --bg:#05091b; --panel:#1d2b63; --panel-2:#2f3ea1; --accent:#8dc4ff; }
+.era-cosmic-authority { --bg:#04020d; --panel:#2a1a4f; --panel-2:#443072; --accent:#f2b6ff; }
