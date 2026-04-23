@@ -1,0 +1,26 @@
+{
+  "incident_reports": [
+    {"id": "incident_01", "title": "Redacted Report", "description": "Partial footage shows a rehearsal with one missing frame every 11 seconds.", "unlocked": false},
+    {"id": "incident_02", "title": "Kitchen Door", "description": "A steel door was welded shut from the inside.", "unlocked": false},
+    {"id": "incident_03", "title": "No Child Present", "description": "Witness confirms hearing laughter after closing with no occupancy.", "unlocked": false},
+    {"id": "incident_04", "title": "Temperature Drift", "description": "Cold pockets move against airflow in the dining hall.", "unlocked": false}
+  ],
+  "maintenance_logs": [
+    {"id": "maint_01", "title": "Power Relay", "description": "Relay B stutters whenever camera feed 4 is selected.", "unlocked": false},
+    {"id": "maint_02", "title": "Arcade Stack", "description": "Three cabinets draw power while disconnected.", "unlocked": false},
+    {"id": "maint_03", "title": "Tunnels", "description": "Humidity remains high despite all dehumidifiers running.", "unlocked": false},
+    {"id": "maint_04", "title": "Service Lift", "description": "Lift logs show usage on dates before installation.", "unlocked": false}
+  ],
+  "internal_memos": [
+    {"id": "memo_01", "title": "Behavioral Notes", "description": "Staff are told to avoid saying names in storage wing.", "unlocked": false},
+    {"id": "memo_02", "title": "Revision 7", "description": "Training script removed references to family events.", "unlocked": false},
+    {"id": "memo_03", "title": "Night Test", "description": "Observers told to mark where they feel watched.", "unlocked": false},
+    {"id": "memo_04", "title": "Curtain Protocol", "description": "Do not open curtains if soundtrack pauses mid-loop.", "unlocked": false}
+  ],
+  "security_notes": [
+    {"id": "sec_01", "title": "Camera 2A", "description": "The feed mirrors itself after 02:11.", "unlocked": false},
+    {"id": "sec_02", "title": "Badge Access", "description": "Research wing unlocks after six confirmed incident reviews.", "unlocked": false},
+    {"id": "sec_03", "title": "Silent Alarm", "description": "Alarm panel logs acknowledge button presses never made.", "unlocked": false},
+    {"id": "sec_04", "title": "Archive Vault", "description": "Vault keycode changed to a date that does not exist.", "unlocked": false}
+  ]
+}
